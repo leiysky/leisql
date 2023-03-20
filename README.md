@@ -1,32 +1,32 @@
 # LeiSQL
 
-**LeiSQL** is a toy project written by a drunk programmer [`leiysky`](https://github.com/leiysky).
+**LeiSQL** is a toy project written by a drunk programmer [leiysky](https://github.com/leiysky).
 
 So far, it only supports limited SQL syntax, and can not even provide data persistence. So it's not recommended to use it in production environment.
 
 ## Usage
 
-You can build it from source code, with `cargo`:
+You can build it from source code, with **cargo**:
 
 ```bash
 cargo build
 ```
 
-There is only a single binary executable file `leisql` in `target/debug` directory. You can run it with:
+There is only a single binary executable file **leisql** in **target/debug** directory. You can run it with:
 
 ```bash
 ./target/debug/leisql
 ```
 
-Which will start a `LeiSQL` server, listening on `localhost:5432` by default(and cannot be configured at all).
+Which will start a **LeiSQL** server, listening on **localhost:5432** by default(and cannot be configured at all).
 
-After starting the server, you can connect to it with `psql`:
+After starting the server, you can connect to it with **psql**:
 
 ```bash
 psql -h localhost -p 5432
 ```
 
-Then you can run SQL statements in `psql`, here's an example:
+Then you can run SQL statements in **psql**, here's an example:
 
 ```sql
 leiysky=> create table t(a int);
@@ -62,4 +62,4 @@ A: Ditto.
 Q: Why is it so ugly?
 A: I don't think so.
 
-P.S. the last three `Q&A`s are written by `Copilot` automatically.
+P.S. the last three **Q&A** are written by [Copilot](https://github.com/features/copilot) automatically.
